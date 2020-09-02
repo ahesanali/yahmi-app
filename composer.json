@@ -1,0 +1,16 @@
+{
+    "name": "ahesanali/yahmi-app",
+    "description": "Yahmi Web application development framework",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ahesanali Suthar",
+            "email": "ahesanali.suthar@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "ahesanali/yahmi": "^1.0"
+    }
+}
