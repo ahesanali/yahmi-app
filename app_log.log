@@ -1,0 +1,64 @@
+[07-08-2018 12:52:48]Array
+(
+    [0] => Array
+        (
+            [Currency_Id] => 1
+            [Symbol] => â‚¹
+            [ShortName] => INR
+            [Currency] => Indian Rupee
+            [Created_By] => 1
+            [Create_TimeStamp] => 2016-01-18 17:49:44
+            [Updated_By] => 0
+            [Update_TimeStamp] => 0000-00-00 00:00:00
+        )
+
+    [1] => Array
+        (
+            [Currency_Id] => 2
+            [Symbol] => $
+            [ShortName] => USD
+            [Currency] => United States dollar
+            [Created_By] => 1
+            [Create_TimeStamp] => 2016-01-18 17:50:23
+            [Updated_By] => 0
+            [Update_TimeStamp] => 0000-00-00 00:00:00
+        )
+
+    [2] => Array
+        (
+            [Currency_Id] => 3
+            [Symbol] => ?.?
+            [ShortName] => SAR
+            [Currency] => Saudi riyal
+            [Created_By] => 1
+            [Create_TimeStamp] => 2016-01-18 17:51:59
+            [Updated_By] => 0
+            [Update_TimeStamp] => 0000-00-00 00:00:00
+        )
+
+    [3] => Array
+        (
+            [Currency_Id] => 4
+            [Symbol] => ?
+            [ShortName] => IRR
+            [Currency] => Iranian rial
+            [Created_By] => 1
+            [Create_TimeStamp] => 2016-01-18 17:51:59
+            [Updated_By] => 0
+            [Update_TimeStamp] => 0000-00-00 00:00:00
+        )
+
+    [4] => Array
+        (
+            [Currency_Id] => 5
+            [Symbol] => €
+            [ShortName] => EUR
+            [Currency] => Euro
+            [Created_By] => 1
+            [Create_TimeStamp] => 2016-01-18 17:51:59
+            [Updated_By] => 0
+            [Update_TimeStamp] => 0000-00-00 00:00:00
+        )
+
+)
+
