@@ -15,4 +15,4 @@
 </body>
 </html>
 
-<?php /**PATH /Users/inspire/Sites/research/yahmi-app/views/layouts/main_layout.blade.php ENDPATH**/ ?>
+<?php /**PATH /Users/inspire/Sites/research/yahmi-app/resources/views/layouts/main_layout.blade.php ENDPATH**/ ?>

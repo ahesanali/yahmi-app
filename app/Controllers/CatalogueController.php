@@ -19,6 +19,10 @@ class CatalogueController extends Controller
    {
       parent::__construct();
       $this->bookService = $book;
+
+      //define middlewares from controllers
+      $this->middleware('FirstMiddleware',['only'=>['getTitleList','getEditTitle']]);
+      $this->middleware('SecondMiddleware',['except'=>['getTitleList','postAddTitle']]);
    }
 
    /**
@@ -44,7 +48,7 @@ class CatalogueController extends Controller
         $price_list = $price_list->toArray();
         //var_dump($this->generateUrl('edit_title',[':title_id'=>2,':project_id'=>5]));
         // returning view
-        $this->view('catalogue.titles',compact('name','products','price_list'));
+        return view('catalogue.titles',compact('name','products','price_list'));
         // testing redirect to route
         // $this->redirectToRoute('edit_title',[':title_id'=>2,':project_id'=>5]);
    }
@@ -72,14 +76,7 @@ class CatalogueController extends Controller
    public function getEditTitle($title_id,$project_id)
    {
       // echo "edit title action for title id: ".$title_id." and project id ".$project_id;
-      $this->view('catalogue.edit',compact('title_id','project_id'));
+      return view('catalogue.edit',compact('title_id','project_id'));
    }
 
-   /**
-    * Add name POST action
-    */
-   public function addName()
-   {
-      echo "You have submitted: ".$_POST['first_name'];
-   }
 }

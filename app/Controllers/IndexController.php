@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use Yahmi\Routing\Controller;
 use App\Models\Catalogue\Book;
+use Yahmi\Log\Logger;
 
 class IndexController extends Controller
 {
@@ -18,7 +19,7 @@ class IndexController extends Controller
    public function index()
    {
 		  $book_list = $this->bookService->getBookList();
-
-      $this->view('home.index',compact('book_list'));
+      Logger::log("--This is basic string log--");
+      return view('home.index',compact('book_list'));
    }
 }
