@@ -46,3 +46,4 @@ $response = $kernel->hanldeRequest($url);
 $session_manager = app('auth_manager');
 var_dump($session_manager );
 echo $response;
+$kernel->flush();
