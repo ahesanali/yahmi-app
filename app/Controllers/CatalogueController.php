@@ -61,6 +61,7 @@ class CatalogueController extends Controller
       $rules = [
           'first_name'  => ['required'] 
       ];
+      
       $validator_instance = Validator::makeValidator($_POST, $rules, true);
       $validator_instance->sendValidationErrorsIfAny("Registration failed due to incorrect data"); 
 

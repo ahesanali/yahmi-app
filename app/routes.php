@@ -2,7 +2,8 @@
 use Yahmi\Routing\Router;
 
 $router = new Router();
-$router->setControllerBaseNameSpace(config('app.php','controller_namespace'));
+$router->setControllerBaseNameSpace('App\\Controllers\\');
+$router->setMiddlewaresBaseNameSpace('App\\Middlewares\\');
 
 $router->get('home','/',['controller'=>'IndexController','action' => 'index','middlewares'=>['FirstMiddleware']]);
 

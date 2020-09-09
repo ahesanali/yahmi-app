@@ -15,7 +15,7 @@
 $app = new Yahmi\Core\Application(
     dirname(__DIR__)
 );
-
+ 
 /*
 |--------------------------------------------------------------------------
 | Return The Application
@@ -29,9 +29,8 @@ $app = new Yahmi\Core\Application(
 $router = include_once __DIR__.'/routes.php';
 //Adding other services to container like router as mentioned above
 //$container->router = $router;
-$app->singleton(Yahmi\Routing\Router::class, function (Yahmi\Core\Application $container) use($router) {
-    return $router;
-});
+$app->instance(Yahmi\Routing\Router::class, $router);
+
 
 /*
 |--------------------------------------------------------------------------
