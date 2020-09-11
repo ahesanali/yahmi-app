@@ -43,7 +43,7 @@ $kernel = $app->make(Yahmi\Contracts\Http\Kernel::class);
 $url = $_SERVER['REQUEST_URI'];
 $response = $kernel->hanldeRequest($url);
 
-$session_manager = app('auth_manager');
-var_dump($session_manager );
+// $auth_manager = app('auth_manager');
+// var_dump($auth_manager );
 echo $response;
 $kernel->flush();

@@ -3,9 +3,9 @@ use Yahmi\Routing\Router;
 
 $router = new Router();
 $router->setControllerBaseNameSpace('App\\Controllers\\');
-$router->setMiddlewaresBaseNameSpace('App\\Middlewares\\');
+// $router->setMiddlewaresBaseNameSpace('App\\Middlewares\\');
 
-$router->get('home','/',['controller'=>'IndexController','action' => 'index','middlewares'=>['FirstMiddleware']]);
+$router->get('home','/',['controller'=>'IndexController','action' => 'index','middlewares'=>['first']]);
 
 // $router->get('title_list','/title_list',['controller'=>'CatalogueController','action' => 'getTitleList']);
 

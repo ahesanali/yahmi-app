@@ -21,8 +21,8 @@ class CatalogueController extends Controller
       $this->bookService = $book;
 
       //define middlewares from controllers
-      $this->middleware('FirstMiddleware',['only'=>['getTitleList','getEditTitle']]);
-      $this->middleware('SecondMiddleware',['except'=>['getTitleList','postAddTitle']]);
+      $this->middleware('first',['only'=>['getTitleList','getEditTitle']]);
+      $this->middleware('second',['except'=>['getTitleList','postAddTitle']]);
    }
 
    /**
