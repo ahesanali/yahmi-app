@@ -11,7 +11,8 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "ahesanali/yahmi": "dev-master"
+        "ahesanali/yahmi": "dev-master",
+        "symfony/error-handler": "^5.2@dev"
     },
     "autoload": {
         "classmap": [

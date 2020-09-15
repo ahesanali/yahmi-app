@@ -13,6 +13,9 @@
 
 require __DIR__.'/../vendor/autoload.php';
 
+use Symfony\Component\ErrorHandler\Debug;
+use Symfony\Component\ErrorHandler\ErrorHandler;
+use Symfony\Component\ErrorHandler\DebugClassLoader;
 /*
 |--------------------------------------------------------------------------
 | Turn On The Lights
@@ -24,6 +27,26 @@ require __DIR__.'/../vendor/autoload.php';
 | the responses back to the browser and delight our users.
 |
 */
+
+Debug::enable();
+
+// or enable only one feature
+//ErrorHandler::register();
+//DebugClassLoader::enable();
+
+// If you want a custom generic template when debug is not enabled
+// HtmlErrorRenderer::setTemplate('/path/to/custom/error.html.php');
+$filename = "Exception";
+$datetimeFormat = "dd-mm-yyyy";
+$data = ErrorHandler::call(static function () use ($filename, $datetimeFormat) {
+    // if any code executed inside this anonymous function fails, a PHP exception
+    // will be thrown, even if the code uses the '@' PHP silence operator
+    // $data = json_decode(file_get_contents($filename), true);
+    // $data['read_at'] = date($datetimeFormat);
+    // file_put_contents($filename, json_encode($data));
+	$data = "";
+    return $data;
+});
 
 $app = require_once __DIR__.'/../app/app.php';
 
