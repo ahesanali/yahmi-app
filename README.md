@@ -19,3 +19,8 @@ Auth Library Classes
 1. User
 2. Role
 3. AuthManager
+
+To run this app
+------
+Use this command: php -S localhost:8000 -t public/
+This command will use php's inbuilt web server. Note that this development server only. You can't use it in production environment.

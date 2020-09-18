@@ -48,4 +48,12 @@ $app->singleton(
     App\Kernel::class
 );
 
+/**
+ * If we have custom auth tables 
+ * Otherwise you can remove thid bidning
+ */
+$app->extend('auth_manager', function ($service, $app) {
+    return  new App\Models\Auth\AuthManager();
+});
+
 return $app;

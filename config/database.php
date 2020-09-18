@@ -29,7 +29,7 @@ return [
       'mysql' => [
          'driver'   => 'mysql',
          'host'     => 'localhost',
-         'database' => 'meher_library',
+         'database' => 'research_yahmi',
          'username' => 'root',
          'password' => 'inspire@2009',
          'port' => '3306'
