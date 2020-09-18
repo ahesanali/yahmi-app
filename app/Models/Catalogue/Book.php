@@ -17,8 +17,8 @@ class Book extends CoreDataService
 		];
     }
     
-    public function getCurrency()
+    public function getCards()
     {
-        return $this->executeSQL("SELECT * FROM `m_currency`");
+        return $this->executeSQL("SELECT * FROM `cards`");
     }
 }

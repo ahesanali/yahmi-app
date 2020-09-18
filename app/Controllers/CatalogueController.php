@@ -35,7 +35,7 @@ class CatalogueController extends Controller
         // var_dump($this->bookService->getBookList());
         // $app = new Config('app.php');
         // var_dump($app);
-        //Logger::log($this->bookService->getCurrency());
+        //Logger::log($this->bookService->getCards());
           $products = array(
               array('product_name'=>'Potato1'),
               array('product_name'=>'Potato2'),

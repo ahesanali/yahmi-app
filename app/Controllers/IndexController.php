@@ -19,7 +19,7 @@ class IndexController extends Controller
    public function index()
    {
 		  $book_list = $this->bookService->getBookList();
-      Logger::log("--This is basic string log--");
+      // Logger::log("--This is basic string log--");
       return view('home.index',compact('book_list'));
    }
 }
