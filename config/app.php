@@ -20,7 +20,14 @@ return [
 	| Application public path
 	|-----------------------------------------------------
 	 */
-	'public_dir' => '/research/yahmi-app/public',
+	'public_dir' => '/public',
+	/*
+	|------------------------------------------------------
+	| Application Assets path
+	|-----------------------------------------------------
+	 */
+	
+	'assets_dir' => '/resources/assets',
 	/*
 	|------------------------------------------------------
 	| Application is in debug mode
