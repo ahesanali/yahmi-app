@@ -1,5 +1,5 @@
 <?php
-namespace Yahmi\Auth;
+namespace App\Models\Auth;
 
 use Yahmi\Auth\User as BaseUser;
 use Yahmi\Auth\Role;
@@ -7,9 +7,9 @@ use stdClass;
 
 class User extends BaseUser
 {
-	public function __construct()
+	public function __construct(array $attributes)
 	{
-		parent::__construct();
+		parent::__construct($attributes);
 	}
 	/**
      * Get Assigned Role
